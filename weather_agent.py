@@ -1,4 +1,4 @@
-from smolagents import CodeAgent, ToolCallingAgent, DuckDuckGoSearchTool, LiteLLMModel, PythonInterpreterTool, tool
+from smolagents import ToolCallingAgent, LiteLLMModel, tool
 from typing import Optional
 
 # model = LiteLLMModel(model_id="ollama/qwen2.5-coder:7b")
@@ -25,3 +25,4 @@ agent = ToolCallingAgent(tools=[get_weather], model=model)
 
 answer = agent.run("What is the weather in Tokyo?")
 print(answer)
+
